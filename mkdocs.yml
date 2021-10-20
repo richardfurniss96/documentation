@@ -1,5 +1,16 @@
-site_name: documenation
+site_name: docs.cloudpilgrim.io
+repo_name: "richardfurniss96/documenation"
+repo_url: 'https://github.com/richardfurniss96/documentation'
 nav:
     - Home: index.md
-    - About: about.md
+    - Documentation:
+      - AWS-CLI: aws-cli.md
+      - EKS: eks.md
+      - Kubectl: kubectl.md
 theme: material
+markdown_extensions:
+    - admonition
+    - pymdownx.highlight:
+        use_pygments: true
+    - pymdownx.superfences
+    - pymdownx.inlinehilite
